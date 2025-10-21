@@ -18,7 +18,7 @@ if($conexao->connect_error){
 
     if ($consulta == "") {
     echo "<script>
-        alert('Campo de busca vazio. Por favor, insira um título para buscar.');
+        alert('Campo de busca vazio. Por favor, insira um nome para buscar.');
         window.location.href = 'cadastro.html';
     </script>";
     } else {

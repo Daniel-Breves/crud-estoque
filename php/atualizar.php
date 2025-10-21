@@ -29,12 +29,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conexao->query($sql) === TRUE) {
         echo "<script>
-            alert('Livro atualizado com sucesso!');
+            alert('Produto atualizado com sucesso!');
             window.location.href = '../paginas/gerenciar.html';
         </script>";
     } else {
         echo "<script>
-            alert('Erro ao atualizar livro: " . addslashes($conexao->error) . "');
+            alert('Erro ao atualizar produto: " . addslashes($conexao->error) . "');
             window.location.href = 'index.html';
         </script>";
     }

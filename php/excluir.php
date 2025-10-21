@@ -19,7 +19,7 @@ if ($conexao->query($sql) === TRUE) {
     header("Location: ../paginas/gerenciar.html");
 } else {
     echo "<script>
-        alert('Erro ao excluir livro: " . addslashes($conexao->error) . "');
+        alert('Erro ao excluir produto: " . addslashes($conexao->error) . "');
         window.location.href = 'index.html';
     </script>";
 }

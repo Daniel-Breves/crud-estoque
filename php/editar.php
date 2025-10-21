@@ -22,14 +22,14 @@ if (isset($_GET["id"])) {
         $livro = $resultado->fetch_assoc();
     } else {
         echo "<script>
-            alert('Livro não encontrado.');
+            alert('Produto não encontrado.');
             window.location.href = 'index.html';
         </script>";
         exit;
     }
 } else {
     echo "<script>
-        alert('Código do livro não informado.');
+        alert('Id do produto não informado.');
         window.location.href = 'index.html';
     </script>";
     exit;

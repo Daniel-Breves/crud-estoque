@@ -1,15 +1,5 @@
 <?php
-//conecta ao db e testa conexão
-$servidor = "localhost";
-$usuario = "root";
-$senha = "";
-$db = "estoque_db";
-
-$conexao = new mysqli ($servidor, $usuario, $senha, $db);
-
-if($conexao->connect_error){
-        die("error de conexao:" .$conexao->connect_error);
-    }
+include("conexao.php");
 
 //pegando do formulario e jogando no banco
 
@@ -24,6 +14,14 @@ $sql = "INSERT INTO produtos (nome, descricao, quantidade, preco)
 //traz segurança evitando erros
 $stmt = $conexao->prepare($sql);
 $stmt->bind_param("ssis",$nom, $desc, $quant, $preco);
+
+if ($nom == "" || $desc == "" || $quant == "" || $preco == "") {
+    echo "<script>
+        alert('Preencha todos os campos');
+        window.location.href = '../paginas/cadastrar.html';
+    </script>";
+    exit;
+}
 
 
 if($stmt->execute()){

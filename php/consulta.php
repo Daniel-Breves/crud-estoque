@@ -1,15 +1,5 @@
   <?php
-  //conecta ao db e testa conexão
-$servidor = "localhost";
-$usuario = "root";
-$senha = "";
-$db = "estoque_db";
-
-$conexao = new mysqli ($servidor, $usuario, $senha, $db);
-
-if($conexao->connect_error){
-        die("error de conexao:" .$conexao->connect_error);
-    }
+ include("conexao.php");
   //Consultando produtos
 
     $consulta = $_POST["produto"];
@@ -19,7 +9,7 @@ if($conexao->connect_error){
     if ($consulta == "") {
     echo "<script>
         alert('Campo de busca vazio. Por favor, insira um nome para buscar.');
-        window.location.href = 'cadastro.html';
+        window.location.href = '../paginas/gerenciar.html';
     </script>";
     } else {
     if ($resultado->num_rows > 0) {
@@ -53,8 +43,8 @@ if($conexao->connect_error){
         echo "</table>";
     } else {
         echo "<script>
-            alert('Nenhum livro encontrado.');
-            window.location.href = 'index.html';
+            alert('Nenhum produto encontrado.');
+            window.location.href = '../paginas/gerenciar.html';
         </script>";
     }
 }

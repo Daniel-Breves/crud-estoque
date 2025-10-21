@@ -27,10 +27,10 @@ $stmt->bind_param("ssis",$nom, $desc, $quant, $preco);
 
 
 if($stmt->execute()){
-    echo "<script>alert('Livro cadastrado com sucesso!');</script>";
+    echo "<script>alert('Produto cadastrado com sucesso!');</script>";
        
     } else {
-        echo "<script>alert('Erro ao inserir livro: " . $stmt->error . "');</script>";
+        echo "<script>alert('Erro ao cadastrar produto: " . $stmt->error . "');</script>";
     }
     
 

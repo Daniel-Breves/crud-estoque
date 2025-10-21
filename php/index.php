@@ -28,6 +28,7 @@ $stmt->bind_param("ssis",$nom, $desc, $quant, $preco);
 
 if($stmt->execute()){
     echo "<script>alert('Produto cadastrado com sucesso!');</script>";
+    header("Location: ../paginas/gerenciar.html");
        
     } else {
         echo "<script>alert('Erro ao cadastrar produto: " . $stmt->error . "');</script>";

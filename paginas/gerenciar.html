@@ -6,6 +6,30 @@
     <title>Gerenciar Estoque</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Gerenciar Estoque</h1>
+        <a href="cadastrar.html">Cadastre mais produtos</a>
+    </header>
+    <main>
+        <section>
+            <h2>Consultar produtos</h2>
+
+    <form action="../php/consulta.php" method="post">
+        <label for="produto">titulo:</label>
+        <input type="text" name="produto" id="nome">
+        <br><br>
+
+        <input type="submit" name="consulta" value="consultar">
+    </form>
+
+    <form action="../php/consultd.php" method="post">
+
+        <input type="submit" name="consulta" value="consultar todos produtos">
+    </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>

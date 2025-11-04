@@ -7,10 +7,23 @@
 </head>
 <body>
     <header>
-        <h1>Gerenciar Estoque</h1>
-        <a href="cadastrar.html">Cadastre mais produtos</a>
+        <h1>Gerenciador de Estoque</h1>
     </header>
     <main>
+        <section>
+             <h2>
+            Cadastro de produtos
+             </h2>
+            <form action="../php/cadastrar.php" method="post">
+                <input type="text" name="nome" placeholder="nome:">
+                <input type="text" name="descri" placeholder="descrição:">
+                <input type="number" name="quanti" placeholder="quantidade:">
+                <input type="number" name="price" placeholder="preço:">
+
+                <input type="submit" value="Cadastrar">
+            </form>
+        </section>
+
         <section>
             <h2>Consultar produtos</h2>
 

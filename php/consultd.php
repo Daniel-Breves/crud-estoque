@@ -8,7 +8,7 @@ include("conexao.php");
 
     if ($resultado2->num_rows > 0) {
                 
-                echo "<br><center>LIVRARIA DO SABER - CONSULTA TODOS OS LIVROS<br><br><table border='1'>
+                echo "<br><center>Estoque total<br><br><table border='1'>
                         <tr>
                             <th>id</th>
                             <th>nome</th>
@@ -27,11 +27,11 @@ include("conexao.php");
                 }
                 echo "</table>";
             } else {
-                echo "Nenhum livro encontrado.";
+                echo "Nenhum produto encontrado.";
             }
    // Botão para voltar à página inicial
         echo "<div style='margin-top: 20px; text-align: center;'> 
-                 <a href='../index.html'>
-                   <button style='padding: 10px 20px; font-size: 16px;'>Voltar para a página inicial</button>
+                 <a href='../paginas/gerenciar.html'>
+                   <button style='padding: 10px 20px; font-size: 16px;'>Voltar</button>
                  </a>
               </div>";

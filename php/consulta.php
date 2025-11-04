@@ -51,7 +51,7 @@
 
 // Botão para voltar à página inicial
 echo "<div style='margin-top: 20px; text-align: center;'>
-        <a href='../index.html'>
+        <a href='../paginas/gerenciar.html'>
             <button style='padding: 10px 20px; font-size: 16px;'>Voltar para a página inicial</button>
         </a>
       </div>";

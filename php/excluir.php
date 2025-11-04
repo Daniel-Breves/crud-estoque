@@ -10,7 +10,7 @@ if ($conexao->query($sql) === TRUE) {
 } else {
     echo "<script>
         alert('Erro ao excluir produto: " . addslashes($conexao->error) . "');
-        window.location.href = 'index.html';
+        window.location.href = '../paginas/gerenciar.html';
     </script>";
 }
 ?>

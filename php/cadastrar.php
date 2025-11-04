@@ -18,7 +18,7 @@ $stmt->bind_param("ssis",$nom, $desc, $quant, $preco);
 if ($nom == "" || $desc == "" || $quant == "" || $preco == "") {
     echo "<script>
         alert('Preencha todos os campos');
-        window.location.href = '../paginas/cadastrar.html';
+        window.location.href = '../paginas/gerenciar.html';
     </script>";
     exit;
 }

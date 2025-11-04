@@ -13,14 +13,14 @@ if (isset($_GET["id"])) {
     } else {
         echo "<script>
             alert('Produto não encontrado.');
-            window.location.href = 'index.html';
+            window.location.href = '../paginas/gerenciar.html';
         </script>";
         exit;
     }
 } else {
     echo "<script>
         alert('Id do produto não informado.');
-        window.location.href = 'index.html';
+        window.location.href = '../paginas/gerenciar.html';
     </script>";
     exit;
 }
@@ -45,5 +45,5 @@ if (isset($_GET["id"])) {
 </form>
 
 <div style="margin-top: 20px;">
-    <a href="../index.html"><button>Voltar para a página inicial</button></a>
+    <a href="../paginas/gerenciar.html"><button>Voltar para a página inicial</button></a>
 </div>
